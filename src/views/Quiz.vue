@@ -81,7 +81,7 @@ export default class Quiz extends Vue {
     const question = this.quiz.questions[this.step - 1];
     const answer = question.answers[this.selectedStepAnswer];
     if (answer && answer.isCorrect) {
-      // add answer's points to score
+      // add answer's point to score
     } else {
       this.mistakes.push({
         title: question.title,

@@ -126,10 +126,10 @@ class QuizzesModule extends VuexModule implements IQuizState {
   @Mutation
   changeQuizzes({ newIndex, oldIndex, doc, type }) {
     if (type === "added") {
-      this.quizzes.splice(newIndex, 0, doc.data());
+      this.quizzes.splice(newIndex, 0, { id: doc.id, ...(<IQuiz>doc.data()) });
     } else if (type === "modified") {
       this.quizzes.splice(oldIndex, 1);
-      this.quizzes.splice(newIndex, 0, doc.data());
+      this.quizzes.splice(newIndex, 0, { id: doc.id, ...(<IQuiz>doc.data()) });
     } else if (type === "removed") {
       this.quizzes.splice(oldIndex, 1);
     }
