@@ -1,7 +1,7 @@
 # firebase
 .firebase
 firebase*.*
-
+!firebase/
 
 .DS_Store
 node_modules

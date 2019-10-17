@@ -12,18 +12,6 @@ export const config = {
   measurementId: process.env.VUE_APP_FIREBASE_MEASUREMENT_ID
 };
 
-/*
-export const config = {
-  apiKey: "AIzaSyD9GS_S1DWBgZUWU3bczU3XjhFkfSJSLUw",
-  authDomain: "quiz-maker-719a7.firebaseapp.com",
-  databaseURL: "https://quiz-maker-719a7.firebaseio.com",
-  projectId: "quiz-maker-719a7",
-  storageBucket: "quiz-maker-719a7.appspot.com",
-  messagingSenderId: "988431093253",
-  appId: "1:988431093253:web:bc9d6f23d937b66f5a966c",
-  measurementId: "G-XESCL4BEF8"
-}; */
-
 export const UIConfig = {
   signInOptions: [
     {
