@@ -147,17 +147,6 @@ class QuizzesModule extends VuexModule implements IQuizState {
   }
 
   @Action
-  getAll() {
-    const unsubscribe = db.collection(QUIZZES_COLLECTION).onSnapshot(snapshot => {
-      this.restQuizzes();
-      snapshot.docChanges().forEach(change => {
-        this.pushQuiz({ id: change.doc.id, ...(<IQuiz>change.doc.data()) });
-      });
-    });
-    return unsubscribe;
-  }
-
-  @Action
   async getById(id: string) {
     const quiz = await db
       .collection(QUIZZES_COLLECTION)
