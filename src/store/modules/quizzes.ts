@@ -159,9 +159,6 @@ class QuizzesModule extends VuexModule implements IQuizState {
   }
 
   @Action
-  fetchById() {}
-
-  @Action
   async create() {
     const { user } = UserModule;
     if (user) {
