@@ -1,0 +1,11 @@
+{
+    "extends": [
+        "prettier/@typescript-eslint",
+        "plugin:vue/essential",
+        "@vue/typescript",
+        "plugin:prettier/recommended",
+        "@vue/airbnb",
+        "prettier",
+        "prettier/vue"
+    ]
+  }
